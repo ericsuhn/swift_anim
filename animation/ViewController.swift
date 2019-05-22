@@ -30,12 +30,12 @@ class ViewController: UIViewController {
     }
     
     @IBAction func walkBtnAction(_ sender: Any) {
-        let timer = Timer.scheduledTimer(timeInterval: 0.88, target: self, selector: #selector(updateImage(timer:)), userInfo: ["xCoord": 40], repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 0.88, target: self, selector: #selector(updateImage(timer:)), userInfo: nil, repeats: true)
     }
     
     @IBAction func btnAction(_ sender: Any) {
         //updateImage()
-        let timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(updateImage(timer:)), userInfo: ["xCoord": 40], repeats: true)
+        let timer = Timer.scheduledTimer(timeInterval: 0.05, target: self, selector: #selector(updateImage(timer:)), userInfo: nil, repeats: true)
     }
     
     
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         //Move the image toward right
         print(xCoordinateInput.text!)
         
-        let xVal = (xCoordinateInput.text!)
+        //let xVal = (xCoordinateInput.text!)
         //let xval = 20;
         
         var xval : CGFloat? = 20
